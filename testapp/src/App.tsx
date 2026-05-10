@@ -541,8 +541,8 @@ function WalletScreen({ setScreen }: { setScreen: (s: ScreenId) => void }) {
           </div>
         </div>
         <div className="wmh-stats">
-          <div className="wmh-stat"><span className="k">Contributed</span><span className="v">KES 55,000</span></div>
-          <div className="wmh-stat"><span className="k">PayLater</span><span className="v">KES 45,000</span></div>
+          <div className="wmh-stat"><span className="k">Total paid</span><span className="v">KES 55,000</span></div>
+          <div className="wmh-stat"><span className="k">Total used</span><span className="v">KES 92,000</span></div>
         </div>
       </div>
 
@@ -685,7 +685,7 @@ function WalletScreen({ setScreen }: { setScreen: (s: ScreenId) => void }) {
           <div className="pl-ic"><svg className="ic20" fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" /></svg></div>
           <div className="pl-text">
             <div className="pl-h">Top up on credit · HealthNOW PayLater</div>
-            <div className="pl-s">Get treated today, pay tomorrow. Pre-approved up to <strong>KES 45,000</strong> through Co-op Bank · KCB · SBM · Inuka · Pension Club · partner SACCOs.</div>
+            <div className="pl-s">Get treated today, pay tomorrow. Pre-approved up to <strong>KES 20,000</strong> through Co-op Bank · KCB · SBM · Inuka · Pension Club · partner SACCOs.</div>
           </div>
           <button className="cta">Explore PayLater →</button>
         </div>
@@ -906,7 +906,7 @@ function WalletScreen({ setScreen }: { setScreen: (s: ScreenId) => void }) {
       <div className="paylater-mobile-card" onClick={() => setScreen('paylater')}>
         <div className="pmc-left">
           <div className="pmc-eyebrow">Pre-approved · HealthNOW PayLater</div>
-          <div className="pmc-amount"><span className="ccy">KES</span> 45,000</div>
+          <div className="pmc-amount"><span className="ccy">KES</span> 20,000</div>
           <div className="pmc-sub">Based on your KCB · Co-op wallet history</div>
         </div>
         <button className="cta pmc-cta" onClick={e => { e.stopPropagation(); setScreen('paylater') }}>Request →</button>
@@ -915,7 +915,7 @@ function WalletScreen({ setScreen }: { setScreen: (s: ScreenId) => void }) {
       <div className="paylater-hero" onClick={() => setScreen('paylater')}>
         <div className="ph-left">
           <div className="ph-eyebrow">You're pre-approved up to</div>
-          <div className="ph-amount"><span className="ccy">KES</span> 45,000</div>
+          <div className="ph-amount"><span className="ccy">KES</span> 20,000</div>
           <div className="ph-sub">Based on your wallet history with KCB · Co-op Bank. Funds post to your wallet at the COVA multiplier.</div>
         </div>
         <div className="ph-partners">
@@ -1626,7 +1626,7 @@ function PaylaterScreen({ setScreen }: { setScreen: (s: ScreenId) => void }) {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div>
             <div style={{ fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(255,255,255,.7)', marginBottom: 6 }}>You're pre-approved</div>
-            <div style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", fontSize: 32, fontWeight: 300, letterSpacing: '-0.02em' }}><span style={{ fontSize: 14, color: 'rgba(255,255,255,.7)', marginRight: 5 }}>up to KES</span>45,000</div>
+            <div style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", fontSize: 32, fontWeight: 300, letterSpacing: '-0.02em' }}><span style={{ fontSize: 14, color: 'rgba(255,255,255,.7)', marginRight: 5 }}>up to KES</span>20,000</div>
             <div style={{ fontSize: 12, color: 'rgba(255,255,255,.7)', marginTop: 4 }}>Based on your wallet history with Co-op Bank · KCB</div>
           </div>
           <button className="cta" style={{ background: 'var(--white)', color: 'var(--slate)' }}>Request now →</button>
